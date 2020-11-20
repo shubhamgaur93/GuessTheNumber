@@ -84,7 +84,6 @@ const StartGame = (props: StartGameProps): JSX.Element => {
           />
           <ButtonCustom
             onPress={handleSubmit}
-            buttonStyle={styles.submitButton}
             buttonText="Submit"
           />
         </View>
@@ -111,7 +110,6 @@ export default StartGame;
 
 const styles = StyleSheet.create({
   startGameButton: {
-    backgroundColor: PRIMARY_COLOR,
     marginTop: NORMAL_SPACING,
   },
   headingWrapper: {
@@ -161,9 +159,6 @@ const styles = StyleSheet.create({
   },
   resetButton: {
     backgroundColor: DANGER_COLOR,
-  },
-  submitButton: {
-    backgroundColor: PRIMARY_COLOR,
   },
   card: {
     marginTop: NORMAL_SPACING,

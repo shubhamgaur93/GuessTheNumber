@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import {NORMAL_SPACING} from "./../../constants"
+import { NORMAL_SPACING } from "./../../constants";
 
 const Card = (props: any): JSX.Element => {
   return (

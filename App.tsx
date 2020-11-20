@@ -21,7 +21,15 @@ export default function App(): JSX.Element {
           }}
         />
       )}
-      {screenNumber === 1 && <GameScreen playerNumber={playerNumber} />}
+      {screenNumber === 1 && (
+        <GameScreen
+          playerNumber={playerNumber}
+          handleFinish={() => {
+            setplayerNumber(0);
+            setscreenNumber(0);
+          }}
+        />
+      )}
     </View>
   );
 }

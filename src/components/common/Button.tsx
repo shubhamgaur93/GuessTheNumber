@@ -16,7 +16,7 @@ import {
 
 interface ButtonProps {
   onPress: (event: GestureResponderEvent) => void;
-  buttonStyle: { backgroundColor: string };
+  buttonStyle?: { backgroundColor?: string };
   textStyle?: any;
   buttonText: string;
 }
